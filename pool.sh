@@ -8,4 +8,4 @@ virsh pool-define-as $1 dir - - - - $2
 
 virsh pool-list --all
 
-virsh poll-build $1
+virsh pool-build $1
