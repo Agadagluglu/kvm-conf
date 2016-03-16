@@ -13,7 +13,7 @@
 # --disk -> refers to the virtual disk to create. If no pool are specified, the default one will be used.
 # size -> this argument defines the size in Go of the virtual disk.
 # bus=virtio (to do)
-# For information about pool creation and management, read the documentation in /docs/pool/README.md
+# For information about pool creation and management, read the documentation in /docs/pool.md
 
 # --cdrom -> this option defines what iso to boot from.
 # an alternative option (-l) can be defined instead to provide an url.
