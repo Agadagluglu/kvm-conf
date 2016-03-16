@@ -7,3 +7,5 @@
             - qemu-kvm
             - libvirt-bin
             - virtinst
+            - python-libvirt
+            - python-lxml
