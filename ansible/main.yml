@@ -1,0 +1,7 @@
+---
+- name: Refer to the readme for playbook documentation.
+  hosts: all
+  remote_user: apunch
+  roles:
+  - common
+  - kvm-setup

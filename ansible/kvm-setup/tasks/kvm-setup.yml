@@ -1,0 +1,9 @@
+---
+- name: common configuration for the server
+  tasks:
+    - name: install kvm
+      apt: name={{ item }} state=installed update_cache=yes
+      with_items:
+            - qemu-kvm
+            - libvirt-bin
+            - virtinst
