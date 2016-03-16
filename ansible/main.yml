@@ -3,5 +3,5 @@
   hosts: all
   remote_user: apunch
   roles:
-  - common
-  - kvm-setup
+    - common
+    - kvm-setup
