@@ -3,13 +3,13 @@
   copy: src=/home/apunch/kvm-conf/ansible/roles/kvm-setup/files/pool/dir.xml.j2 dest=/opt/dir.xml.j2
 
 - name: build a pool for kvm
-  virt_pool: command=define name=disks xml=/opt/dir.xml.j2
+  virt_pool: command=define name=vpool xml=/opt/dir.xml.j2
   
 - name: build pool if it does not exist
-  virt_pool: command=build name=disks
+  virt_pool: command=build name=vpool
   
 - name: start the pool
-  virt_pool: command=create name=disks
+  virt_pool: command=create name=vpool
   
 - name: ensure the pool is autostart
-  virt_pool: autostart=yes name=disks
+  virt_pool: autostart=yes name=vpool
