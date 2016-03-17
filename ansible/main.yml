@@ -1,6 +1,9 @@
 ---
 - name: Refer to the readme for playbook documentation.
   hosts: all
+  become: yes
+  become_method: sudo
+  gather_facts: no
   remote_user: apunch
   roles:
     - kvm-setup
