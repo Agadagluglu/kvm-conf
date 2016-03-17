@@ -1,4 +1,3 @@
 --- 
-tasks:
-  - include: kvm-setup.yml
-  - include: kvm-pool.yml
+include: kvm-setup.yml
+include: kvm-pool.yml
