@@ -1,6 +1,6 @@
 ---
 - name: copy template from ansible to the remote host
-  copy: src=template/pool/dir.xml.j2 dest=/opt/dir.xml.j2 owner=apunch group=wheel mode=0644
+  copy: src=/home/apunch/kvm-conf/ansible/roles/kvm-setup/files/pool/dir.xml.j2 dest=/opt/dir.xml.j2 owner=apunch group=wheel mode=0644
 
 - name: build a pool for kvm
   virt_pool: command=define name=disks xml=/opt/dir.xml.j2
