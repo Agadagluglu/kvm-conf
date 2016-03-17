@@ -2,6 +2,27 @@
 
 This is a work in progress.
 
+### Launching a playbook
+
+Standard command
+
+```shell
+ansible-playbook main.yml
+```
+
+Launching locally
+
+```shell
+ansible-playbook -c local -i "localhost," main.yml
+
+Usefull options
+
+```shell
+--ask-become-pass, -K // will prompt for sudo password
+--check // will do a dry-run to check if everything is okay
+--syntax-check // checks for syntax erros
+```
+
 This set of ansible playbooks is used to configure the ubuntu kvm hypervisors with ESXi VMs.
 The roles common and kvm-setup will prepare the server.
 Then, the role ESXi will deploy a qcow2 image containing the ESXi.
