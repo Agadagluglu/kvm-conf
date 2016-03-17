@@ -1,9 +1,9 @@
 ---
 - name: copy template from ansible to the remote host
-  copy: src=/home/apunch/kvm-conf/ansible/roles/kvm-setup/files/pool/dir.xml.j2 dest=/opt/dir.xml.j2
+  copy: src=/home/apunch/kvm-conf/ansible/roles/kvm-setup/files/pool/dir.xml dest=/opt/dir.xml
 
 - name: build a pool for kvm
-  virt_pool: command=define name=vpool xml=/opt/dir.xml.j2
+  virt_pool: command=define name=vpool xml=/opt/dir.xml
   
 - name: build pool if it does not exist
   virt_pool: command=build name=vpool
