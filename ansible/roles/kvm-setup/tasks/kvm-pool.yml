@@ -1,6 +1,6 @@
 ---
 - name: build a pool for kvm
-  virt_pool: command=define name=vpool xml={{ lookup('template', './vpool.xml.j2') }}
+  virt_pool: command=define name=vpool xml={{ lookup('template', './roles/kvm-setup/files/pool/vpool.xml.j2') }}
   
 - name: build pool if it does not exist
   virt_pool: command=build name=vpool
